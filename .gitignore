@@ -33,3 +33,6 @@
 *.vscode
 *.history
 *.cache
+.vscode
+.history
+.cache
