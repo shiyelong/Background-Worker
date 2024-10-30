@@ -1,1 +1,0 @@
-/usr/bin/clang++ -O2 -g -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/6_boost_demo.dir/main.cpp.o -o 6_boost_demo   -L/opt/homebrew/Cellar/boost/1.86.0_1/lib

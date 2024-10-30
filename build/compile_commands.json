@@ -1,8 +1,0 @@
-[
-{
-  "directory": "/Users/shiyelong/code/Background-Worker/build",
-  "command": "/usr/bin/clang++  -I/opt/homebrew/Cellar/boost/1.86.0_1/include -I/opt/homebrew/Cellar/boost/1.86.0_1/include/boost -O2 -g -DNDEBUG -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -o CMakeFiles/6_boost_demo.dir/main.cpp.o -c /Users/shiyelong/code/Background-Worker/UnrealEngine_C++_Background_Work/main.cpp",
-  "file": "/Users/shiyelong/code/Background-Worker/UnrealEngine_C++_Background_Work/main.cpp",
-  "output": "CMakeFiles/6_boost_demo.dir/main.cpp.o"
-}
-]
