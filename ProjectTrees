@@ -1,4 +1,11 @@
 /BackendProject
+├── /common_db                # 公共数据库模块
+│   ├── DatabaseRepository.cs  # 公共数据库访问接口实现
+│   ├── DatabaseCommands.sql    # SQL 命令库（MySQL 和 Oracle）
+│   ├── RedisCommands.redis      # Redis 命令清单
+│   ├── MongoDBCommands.js      # MongoDB 操作文件
+│   ├── AerospikeCommands.aql   # Aerospike 操作文件
+│   └── IDatabaseRepository.cs   # 用于定义数据访问接
 ├── /docs                     # 项目文档
 │   ├── architecture.md       # 项目的整体架构说明
 │   ├── api_reference.md      # API 文档

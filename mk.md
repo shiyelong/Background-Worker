@@ -1,3 +1,10 @@
+common_db
+common_db/DatabaseRepository.cs
+common_db/DatabaseCommands.sql
+common_db/RedisCommands.redis
+common_db/MongoDBCommands.js 
+common_db/AerospikeCommands.aql
+common_db/IDatabaseRepository.cs
 docs
 docs/architecture.md
 docs/api_reference.md
