@@ -1,95 +1,85 @@
-/GameBackendProject
-├── /docs                     # 项目文档
-│   ├── architecture.md       # 项目的整体架构说明
-│   ├── api_reference.md      # API 文档
-│   └── user_manual.md        # 用户手册
-├── /src                      # 后端源代码
-│   ├── /dotnet               # ASP.NET Core 源代码
-│   │   ├── /Controllers      # 控制器
-│   │   │   ├── UserController.cs
-│   │   │   └── ProductController.cs
-│   │   ├── /Models           # 数据模型
-│   │   │   ├── UserModel.cs
-│   │   │   └── ProductModel.cs
-│   │   ├── /Services         # 服务层
-│   │   │   ├── UserService.cs
-│   │   │   └── ProductService.cs
-│   │   ├── /Repositories      # 数据库访问层
-│   │   │   ├── UserRepository.cs
-│   │   │   └── ProductRepository.cs
-│   │   ├── /Migrations       # 数据库迁移
-│   │   │   └── [迁移文件]
-│   │   ├── /Scripts          # 脚本目录
-│   │   │   ├── database_setup.sql # 数据库初始化脚本
-│   │   │   ├── data_seed.sql      # 数据填充脚本
-│   │   │   └── migrations.sql      # 数据库迁移脚本
-│   │   ├── /Configuration      # 配置类
-│   │   │   └── AppSettings.cs  # 应用配置类
-│   │   ├── /Logs               # 日志目录
-│   │   │   └── log.txt         # 日志文件
-│   │   ├── Program.cs          # 主入口文件
-│   │   └── Startup.cs          # 启动配置
-│   ├── /nodejs                 # Node.js 脚本（微服务或实时功能）
-│   │   ├── /routes             # 路由
-│   │   │   ├── userRoutes.js
-│   │   │   └── productRoutes.js
-│   │   ├── /controllers        # 控制器
-│   │   │   ├── userController.js
-│   │   │   └── productController.js
-│   │   ├── /models             # 数据模型
-│   │   │   ├── userModel.js
-│   │   │   └── productModel.js
-│   │   ├── /services           # 服务层
-│   │   │   ├── userService.js
-│   │   │   └── productService.js
-│   │   └── server.js           # Node.js 服务器入口文件
-│   ├── /go                     # Go 脚本（微服务）
-│   │   ├── /handlers           # HTTP 请求处理
-│   │   │   ├── user_handler.go
-│   │   │   └── product_handler.go
-│   │   ├── /models             # 数据模型
-│   │   │   ├── user.go
-│   │   │   └── product.go
-│   │   ├── main.go             # 启动文件
-│   ├── /python                 # Python 脚本（数据处理、机器学习等）
-│   │   ├── /scripts            # Python 脚本
-│   │   │   ├── data_processor.py
-│   │   │   └── model_trainer.py
-│   │   ├── requirements.txt     # Python 依赖
-│   │   └── setup.py            # 设置文件               # 源
-│   ├── /cpp                    # C++ 源代码（游戏服务器相关）
-│   │   ├── /include            # 头文件
-│   │   │   ├── GameServer.h
-│   │   │   └── GameLogic.h
-│   │   ├── /src                # 源文件
-│   │   │   ├── GameServer.cpp
-│   │   │   └── GameLogic.cpp
-│   │   ├── /third_party        # 第三方库（游戏引擎、网络库等）
-│   │   │   └── UnrealEngine    # Unreal Engine 相关代码和资源
-│   │   └── CMakeLists.txt      # CMake 构建文件
-│   ├── /lua                    # Lua 脚本（游戏逻辑处理）
-│   │   ├── /scripts            # Lua 脚本
-│   │   │   ├── game_logic.lua
-│   │   │   └── npc_behavior.lua
-│   │   └── init.lua            # Lua 脚本初始化文件
-│   ├── /scripts                # 通用脚本（如自动化任务）
-│   │   ├── backup.sh           # 备份脚本
-│   │   └── deploy.sh           # 部署脚本
-├── /tests                      # 测试代码
-│   ├── /dotnet                 # .NET 测试
-│   │   ├── UserControllerTests.cs
-│   │   ├── ProductControllerTests.cs
-│   │   └── UserServiceTests.cs
-│   ├── /nodejs                 # Node.js 测试
-│   │   ├── user.test.js
-│   │   └── product.test.js
-│   ├── /go                     # Go 测试
-│   │   ├── user_handler_test.go
-│   │   └── product_handler_test.go
-│   ├── /python                 # Python 测试
-│   │   ├── test_data_processor.py
-│   │   └── test_model_trainer.py
-│   └── /cpp                    # C++ 测试
-│       ├── GameServerTests.cpp
-│       └── GameLogicTests.cpp
-└── README.md                   # 项目说明文件
+# Background Worker
+- Background Worker是一个融合服务器的后端,基于.net,C++,Go,python,nodejs的后台任务处理框架。它可以帮助你快速实现后台任务的处理，并提供统一的接口，让你能够方便的将后台任务的处理结果通知到前端。
+数据库采用融合数据库有MySQL,MongoDB,Redis等多种数据库，可以满足不同场景的需求。
+
+## 特性
+- 统一的接口：提供统一的接口，让你能够方便的将后台任务的处理结果通知到前端。
+- 多种语言支持：支持.net,C++,Go,python,nodejs等多种语言，可以满足不同场景的需求。
+- 多种数据库支持：数据库采用融合数据库有MySQL,MongoDB,Redis等多种数据库，可以满足不同场景的需求。
+
+
+**注意：Background Worker项目，目前处于开发阶段，功能还在不断完善中，欢迎大家提出宝贵意见，共同打造一个更好的后端任务处理框架。**
+
+## 快速开始
+### 安装
+#### 环境准备
+- 安装.net core sdk
+- 安装C++环境
+- 安装Go环境
+- 安装Python环境
+- 安装Nodejs环境
+#### 安装数据库
+- 安装MySQL或MongoDB等
+#### 安装Background Worker
+- 下载Background Worker源码
+- 编译源码
+- 运行Background Worker
+    - 启动命令：dotnet BackgroundWorker.dll
+    - 后台任务默认端口：5000
+### 配置
+#### 接口配置
+- 打开appsettings.json文件
+- 添加以下配置：
+```json
+"BackgroundWorker": {
+    "Host": "http://localhost:5000",
+    "EnableCors": true,
+    "EnableAuthorization": false,
+    "AuthorizationEndpoint": "/api/token",
+    "AuthorizationMethods": "Bearer",
+    "AuthorizationHeader": "Authorization",
+    "EnableLogging": false,
+    "EnableStatusMonitor": false,
+    "StatusMonitorEndpoint": "/api/status"
+}
+```
+#### 数据库配置
+- 配置MySQL数据库
+    - 打开appsettings.json文件
+    - 添加以下配置：
+    ```json
+    "ConnectionStrings": {
+        "DefaultConnection": "Server=localhost;Database=backgroundworker;User Id=root;Password=123456;Charset=utf8mb4;"
+    }
+    ```
+- 配置MongoDB数据库
+    - 打开appsettings.json文件
+    - 添加以下配置：
+    ```json
+    "MongoDb": {
+        "ConnectionString": "mongodb://localhost:27017",
+        "DatabaseName": "backgroundworker"
+    }
+    ```
+#### 其他配置
+- 打开appsettings.json文件
+- 添加以下配置：
+```json
+"BackgroundWorker": {
+    "Host": "http://localhost:5000",
+    "EnableCors": true,
+    "EnableAuthorization": false,
+    "AuthorizationEndpoint": "/api/token",
+    "AuthorizationMethods": "Bearer",
+    "AuthorizationHeader": "Authorization",
+    "EnableLogging": false,
+    "EnableStatusMonitor": false,
+    "StatusMonitorEndpoint": "/api/status"
+}
+```
+- 启动Background Worker
+- 访问后台任务接口：http://localhost:5000/api/backgroundtasks
+### 开发
+
+## 贡献者
+- [shiyelong](https://github.com/shiyelong)

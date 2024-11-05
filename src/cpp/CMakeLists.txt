@@ -21,7 +21,28 @@ set(BOOST_INCLUDEDIR "/usr/local/include")
 
 # 查找 Boost 库
 find_package(Boost REQUIRED COMPONENTS system filesystem)
-
+# 老崔记得看下面注释,文件跑通他!!! 给你的例子
+# 添加 Unreal Engine 5 的路径（假设 UE5 安装在 /path/to/UnrealEngine）
+# set(UE5_ROOT "/path/to/UnrealEngine")
+# include_directories(${UE5_ROOT}/Engine/Source/Runtime/Core/Public)
+# include_directories(${UE5_ROOT}/Engine/Source/Runtime/Core/Public/Containers)
+# include_directories(${UE5_ROOT}/Engine/Source/Runtime/Core/Public/HAL)
+# include_directories(${UE5_ROOT}/Engine/Source/Runtime/Core/Public/Misc)
+# include_directories(${UE5_ROOT}/Engine/Source/Runtime/Core/Public/Templates)
+# include_directories(${UE5_ROOT}/Engine/Source/Runtime/Core/Public/UObject)
+# include_directories(${UE5_ROOT}/Engine/Source/Runtime/Core/Public/Serialization)
+# include_directories(${UE5_ROOT}/Engine/Source/Runtime/Core/Public/Math)
+# include_directories(${UE5_ROOT}/Engine/Source/Runtime/Core/Public/Modules)
+# include_directories(${UE5_ROOT}/Engine/Source/Runtime/Core/Public/Logging)
+# include_directories(${UE5_ROOT}/Engine/Source/Runtime/Core/Public/Internationalization)
+# include_directories(${UE5_ROOT}/Engine/Source/Runtime/Core/Public/Misc)
+# include_directories(${UE5_ROOT}/Engine/Source/Runtime/Core/Public/Serialization)
+# include_directories(${UE5_ROOT}/Engine/Source/Runtime/Core/Public/Templates)
+# include_directories(${UE5_ROOT}/Engine/Source/Runtime/Core/Public/UObject)
+# include_directories(${UE5_ROOT}/Engine/Source/Runtime/Core/Public/Serialization)
+# include_directories(${UE5_ROOT}/Engine/Source/Runtime/Core/Public/Math)
+# include_directories(${UE5_ROOT}/Engine/Source/Runtime/Core/Public/Modules)
+# include_directories(${UE5_ROOT}/Engine/Source/Runtime/Core/Public/Logging)
 # 添加源文件
 file(GLOB_RECURSE SOURCES "src/*.cpp" "src/*.h")
 
