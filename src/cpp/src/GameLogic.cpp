@@ -1,6 +1,7 @@
-#include "includePublic.h"
+#include "../include/includePublic.h"
 
-int main() {
-    cout << "Hello, World!" << endl;
-    return 0;
-}
+class GameLogic {
+    public:
+    protected:
+    private:
+};
