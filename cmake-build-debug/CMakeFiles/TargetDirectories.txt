@@ -1,0 +1,3 @@
+D:/WorkSpace/Background-Worker/cmake-build-debug/CMakeFiles/Background_Worker.dir
+D:/WorkSpace/Background-Worker/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/WorkSpace/Background-Worker/cmake-build-debug/CMakeFiles/rebuild_cache.dir
